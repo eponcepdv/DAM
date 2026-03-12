@@ -89,11 +89,12 @@ public class Stack {
             }
         }
         return pilaAux;
+
     }
     public void pushSubStack(Stack pilaNueva) {
 
         if (pilaNueva.isEmpty()) {
-            throw new StackEmptyException("La pila a añadir está vacía");
+            throw new StackEmptyException("¡La pila a añadir está vacía!");
         } else {
             for (int i = 0; i < pilaNueva.size(); i++) {
                 pila.add(pilaNueva.pop());
