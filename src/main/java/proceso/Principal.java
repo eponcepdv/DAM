@@ -3,7 +3,7 @@ package proceso;
 import collections.Stack;
 
 public class Principal {
-    public static void main(String[] args) {
+    static void main() {
         Stack stack = new Stack();
         stack.push("Hola");
         stack.push("Adiós");

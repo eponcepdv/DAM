@@ -42,7 +42,7 @@ public class Stack {
             if (isEmpty()) {
                 pila.add(dato);
             } else {
-                if (pila.get(0).getClass().equals(dato.getClass())) {
+                if (pila.getFirst().getClass().equals(dato.getClass())) {
                     pila.add(dato);
                 } else {
                     throw new StackException("Argumento de tipo incompatible con el tipo de la pila.");
@@ -55,7 +55,7 @@ public class Stack {
             throw new StackEmptyException("La pila está vacía");
         }
         else  {
-            return pila.remove(pila.size() - 1);
+            return pila.removeLast();
         }
     }
     public Object peek() throws StackEmptyException {
@@ -63,7 +63,7 @@ public class Stack {
             throw new StackEmptyException("La pila está vacía");
         }
         else  {
-            return pila.get(pila.size() - 1);
+            return pila.getLast();
         }
     }
     public boolean contains(Object dato) {
