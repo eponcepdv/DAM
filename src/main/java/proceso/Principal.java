@@ -9,6 +9,8 @@ public class Principal {
         stack.push("Adiós");
         stack.push("Que tal");
         Stack subStack = new Stack();
+
+
         subStack.push("Perro");
         subStack.push("Gato");
 
